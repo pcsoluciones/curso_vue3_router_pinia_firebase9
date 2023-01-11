@@ -12,11 +12,8 @@
 <script setup>
 import { ref } from 'vue';
 import { useUserStore } from '../stores/user';
-// import { useRouter } from 'vue-router';
 
     const userStore = useUserStore()
-    // const router = useRouter()
-
 
     const email = ref('sandro@pcsoluciones.cl')
     const password = ref('123456')
@@ -27,9 +24,5 @@ import { useUserStore } from '../stores/user';
         }
         
         await userStore.loginUser(email.value, password.value)
-        // if ( userStore.userData ) {   // solo si se logea el usuario se almacena en userData
-        //     console.log('Logeado correctamente')
-        //     router.push('/')
-        // }
     }
 </script>
