@@ -3,7 +3,7 @@
         <h1>Editar id: {{route.params.id}}</h1>
         <form @submit.prevent="handleSubmit">
             <input type="text" placeholder="Ingrese URL" v-model="url" >
-            <button type="submit">Editar</button>
+            <button type="submit">Modificar</button>
         </form>
     </div>
 </template>
